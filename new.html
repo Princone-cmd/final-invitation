@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.2">
+    <title>Sanjeev College of Arts and Science</title>
+    <link rel="stylesheet" type="text/css" href="csss/index.css">
+</head>
+
+<body>
+    <div class="container">
+
+                <div class="title">Sanjeev College of Arts and Science</div>
+        <div class="tagline">Wishes to join you </div>
+        <button class="button" onclick="showPopup()">Unveil</button>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2 class="popup-title">THE SAMVIDH 2k24</h2>
+            <p class="popup-tagline">We warmly invite you</p>
+            <div class="box">
+                <p>Dear invitee,</p>
+                <p>We hope this message finds you well. It is with great pleasure that we extend this invitation to you for the upcoming business event hosted by Sanjeev College of Arts and Science.</p>
+                <p><strong>Date:</strong> Second Week of April 2024</p>
+                <!-- Include more details as needed -->
+            </div>
+            <button class="collapse-btn" onclick="hidePopup()">Collapse</button>
+        </div>
+    </div>
+
+     <div class="login" id="login">
+        <div class="loginbg">
+            <img src="https://cdn.pixabay.com/photo/2023/04/03/12/59/crowd-7896788_1280.jpg" alt="SAMVIDH">
+          <h2> Register here</h2>
+            <div class="credentials">
+                <h5>First name</h5>
+                <input type="text" name="first" value="" placeholder="eg.john">
+            </div>
+            <div class="credentials">
+                <h5>Email address</h5>
+                <input type="email" name="" value="" placeholder="example@gmail.com">
+            </div>
+            <div class="credentials">
+                <h5>College name</h5>
+                <input type="text" name="" value="Sanjeev college of arts and science" placeholder="">
+            </div>
+            <button class="register" onclick="hidePopup()">Register</button>
+            
+        </div>
+         
+     </div>
+    <div class="footer"> we cordially invite you</div>
+
+
+    <script>
+        function showPopup() {
+            document.getElementById("login").style.display = "flex";
+            document.body.style.overflow = "hidden";
+        }
+
+        function hidePopup() {
+            document.getElementById("login").style.display = "none";
+            document.body.style.overflow = "auto";
+        }
+    </script>
+</body>
+
+</html>

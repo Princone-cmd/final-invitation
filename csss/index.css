@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body {
+
+ background-image: url("../images/3.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ justify-content: center;
+ height: 100vh;
+ width: 100vw;
+}
+
+.container {
+    display:  flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.title {
+
+    font-size: 50px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 40px;
+    color: #585854;
+    text-align: center;
+}
+
+.button {
+    background-color: #4CAF50;
+    border-width: 4px;
+    border-color: #04AA6D;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9)
+    color: green; 
+    color: white;
+    padding: 14px 30px;
+    text-align: center;
+    font-family: Open_Sans;
+
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+
+.footer {
+    color: #435334;
+    font-family : Arial, sanserif;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Popup Styling */
+/* Popup.css */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.5); 
+
+  /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+}
+
+.popup {
+  background-color: #585685;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.9);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup-content {
+background-image: url("../images/3.jpg");
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ align-items: center;
+ color: black;
+ border: solid;
+ border-color: gold;
+ background-repeat: no-repeat;
+ border-radius: 10px;
+ width: 80%;
+ height: 90%;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ justify-content: center; 
+ justify-items: center;
+}
+
+.box{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 80%;
+    height: 50%;
+    font-family: poppins;
+
+}
+
+.popup-title {
+    color: gold;
+}
+
+.popup-tagline {
+    color: white;
+    padding: 5px;
+}
+
+.collapse-btn {
+    background-color: gold;
+    color: black;
+    padding: 10px 20px;
+    border-color: #52852;
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+   display: flex;
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background:  linear-gradient(180deg, #638889 , #F9EFDB);
+   background-size: cover;
+   background-position:center;
+   justify-content: center;
+   align-items: center;
+   z-index: 1;
+}
+
+.loginbg{
+    width: 60%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-image: url("../images/2.jpg");
+    background-size: cover;
+    border: transparent;
+    border-radius: 30px;
+    border-color: #EEEDEB;
+
+}
+.loginbg img{
+    width: 20%;
+    height: 10%;
+    border-radius: 100px;
+
+
+}
+
+.loginbg h2{
+    color: #C6A969; 
+    font-size:60px;
+   font-family: "Comfortaa", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 800;
+   font-style: normal;
+}
+   
+.loginbg h5{
+    font-size: 20px;
+     color: #C6A969;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+ }
+
+.credentials {
+    display: flex;
+    background-size: 50%;
+    flex-direction: column;
+    margin-bottom: 40px;
+    width: 50%;
+    height: 05%;
+
+}
+
+.credentials input {
+    margin: 0;
+    border-color: #C6A969;
+     backdrop-filter: blur(50px);
+    border-radius: 10px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.credentials h5 {
+    margin: 0;
+}
+.credentials input {
+    background-color: 
+  color: black;
+  font-size: 18px;
+   font-family: "Comfortaa", sans-serif;
+   font-optical-sizing: auto;
+   font-weight: 800;
+   font-style: normal;
+
+}
+
+
+@media only screen and (max-width: 600px){
+    .loginbg{
+        height: 30%;
+    }
+}
