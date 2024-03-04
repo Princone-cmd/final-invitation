@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Dancing+Script:wght@400..700&family=Geologica:wght@300&family=Monsieur+La+Doulaise&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&family=Geologica:wght@300&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Cookie&family=Geologica:wght@300&family=Julius+Sans+One&family=Poppins:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body {
 
  background-image: url("../images/3.jpg");
@@ -164,7 +167,8 @@ background-image: url("../images/3.jpg");
    left: 0;
    width: 100%;
    height: 100%;
-   background:  linear-gradient(180deg, #638889 , #F9EFDB);
+   background:#243b55;
+
    background-size: cover;
    background-position:center;
    justify-content: center;
@@ -173,35 +177,27 @@ background-image: url("../images/3.jpg");
 }
 
 .loginbg{
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     z-index: 1;
-    background-image: url("../images/2.jpg");
+    background: linear-gradient(to bottom, #141e30, #243b55);
     background-size: cover;
     border: transparent;
-    border-radius: 30px;
+    border-radius: 20px;
+   backdrop-filter: blur(200px);
     border-color: #EEEDEB;
-
-}
-.loginbg img{
-    width: 20%;
-    height: 10%;
-    border-radius: 100px;
-
 
 }
 
 .loginbg h2{
-    color: #C6A969; 
-    font-size:60px;
-   font-family: "Comfortaa", sans-serif;
-   font-optical-sizing: auto;
-   font-weight: 800;
-   font-style: normal;
+    color: white;
+  font-family: "Julius Sans One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
    
 .loginbg h5{
@@ -217,6 +213,7 @@ background-image: url("../images/3.jpg");
     background-size: 50%;
     flex-direction: column;
     margin-bottom: 40px;
+    padding-bottom: 5px;
     width: 50%;
     height: 05%;
 
@@ -224,18 +221,18 @@ background-image: url("../images/3.jpg");
 
 .credentials input {
     margin: 0;
-    border-color: #C6A969;
-     backdrop-filter: blur(50px);
-    border-radius: 10px;
+    background-color: #243b55;
+    border-color: transparent;
     height: 60px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 .credentials h5 {
     margin: 0;
 }
 .credentials input {
-    background-color: 
-  color: black;
+    background-color: #141e30;
+  color: white;
   font-size: 18px;
    font-family: "Comfortaa", sans-serif;
    font-optical-sizing: auto;
@@ -243,10 +240,66 @@ background-image: url("../images/3.jpg");
    font-style: normal;
 
 }
+ .register{
+    background-color: #C6A969;
+    border-width: 4px;
+    border-color: #B99470;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9)
+    color: #C6A969; 
+    color: black;
+    padding: 5px 20px;
+    text-align: center;
+    font-family: Open_Sans;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 40px;
+ }
 
 
-@media only screen and (max-width: 600px){
-    .loginbg{
-        height: 30%;
+
+@media screen and (max-width: 600px){   
+    
+    .loginbg {
+        width: 80%;
+        height: 90%;
     }
+  .credentials h2{
+        font-size: 80px;
+
+    }
+    .credentials{
+        width: 80%;
+        height: 7%;
+
+    }
+ .credentials input{
+        font-size: 15px;
+
+    }
+
+}
+
+
+@media screen and (max-width: 300px){
+  .loginbg {
+        width: 80%;
+        height: 90%;
+    }
+  .credentials h2{
+        font-size: 80px;
+
+    }
+    .credentials{
+        width: 80%;
+        height: 7%;
+
+    }
+ .credentials input{
+        font-size: 15px;
+
+    }
+
+
+   
 }
