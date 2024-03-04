@@ -13,11 +13,19 @@
 
                 <div class="title">Sanjeev College of Arts and Science</div>
         <div class="tagline">Wishes to join you </div>
-        <button class="button" onclick="showPopup()">Unveil</button>
+        <button class="button" onclick="showPopup2()">Unveil</button>
     </div>
     <div class="popup" id="popup">
         <div class="popup-content">
-            <h2 class="popup-title">THE SAMVIDH 2k24</h2>
+            <h2 class="popup-title">
+                <span>S</span> 
+                <span>A</span> 
+                <span>M</span> 
+                <span>V</span> 
+                <span>I</span> 
+                <span>D</span> 
+                <span>H</span>
+            </h2>
             <p class="popup-tagline">We warmly invite you</p>
             <div class="box">
                 <p>Dear invitee,</p>
@@ -25,7 +33,8 @@
                 <p><strong>Date:</strong> Second Week of April 2024</p>
                 <!-- Include more details as needed -->
             </div>
-            <button class="collapse-btn" onclick="hidePopup()">Collapse</button>
+              <button class="register" onclick="showPopup()">Register</button>
+            <button class="cancel-btn" onclick="hidePopup2()">Collapse</button>
         </div>
     </div>
 
@@ -33,19 +42,23 @@
         <div class="loginbg">
           <h2> Register here</h2>
             <div class="credentials">
-                <h5>First name</h5>
-                <input type="text" name="first" value="" placeholder="eg.john">
+                <h5>Team name</h5>
+                <input id="fname" type="text" name="first" value="" placeholder="eg.Team owls">
+            </div>
+            <div class="credentials">
+                <h5>Team members</h5>
+                <input id="tname" type="text" name="first" value="" placeholder="eg.john,ram,josh">
             </div>
             <div class="credentials">
                 <h5>Email address</h5>
-                <input type="email" name="" value="" placeholder="example@gmail.com">
+                <input id="email" type="email" name="" value="" placeholder="example@gmail.com">
             </div>
             <div class="credentials">
                 <h5>College name</h5>
-                <input type="text" name="" value="Sanjeev college of arts and science" placeholder="">
+                <input id="coll" type="text" name="" value="" placeholder="example@gmail.com">
             </div>
-            <button class="register" onclick="hidePopup()">Register</button>
-            
+            <button class="register" onclick="hidePopup()">Submit</button>
+            <button class="cancel-btn" onclick="cancel()">Cancel</button>
         </div>
          
      </div>
@@ -53,14 +66,56 @@
 
 
     <script>
+
+
+
+
+
+        function showPopup2() {
+            var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var coll = document.getElementById("coll").value;
+            //if (fname != "" &&  email != "" && coll != ""  ){ 
+                document.getElementById("popup").style.display = "flex";
+                document.getElementById("login").style.display = "none";
+                document.body.style.overflow = "hidden";
+            //}else{
+               // alert("Fill the details first");
+           // }
+        
+
+        }
+
+        function hidePopup2() {
+
+            
+
+            document.getElementById("popup").style.display = "none";
+            document.body.style.overflow = "auto";
+
+        }
         function showPopup() {
             document.getElementById("login").style.display = "flex";
             document.body.style.overflow = "hidden";
         }
 
-        function hidePopup() {
+        function cancel(){
+            hidePopup2();
             document.getElementById("login").style.display = "none";
-            document.body.style.overflow = "auto";
+            document.body.style.overflow = "auto"; 
+        }
+
+        function hidePopup() {
+             var fname = document.getElementById("fname").value;
+            var email = document.getElementById("email").value;
+            var coll = document.getElementById("coll").value;
+            if (fname != "" &&  email != "" && coll != ""  ){
+            hidePopup2();
+            document.getElementById("login").style.display = "none";
+            document.body.style.overflow = "auto"; 
+            }else{
+              alert("Fill the details first");
+            }
         }
     </script>
 </body>
